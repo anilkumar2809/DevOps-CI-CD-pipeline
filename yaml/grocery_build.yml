@@ -1,0 +1,61 @@
+setup:
+  - sudo apt-get -qqq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update
+  - sudo apt-get -qqq update -y
+  - sudo apt-get -qqq install -y git wget dos2unix
+  - sudo DEBIAN_FRONTEND=noninteractive apt-get -qqq install -y debconf-utils
+  - sudo debconf-set-selections <<< "'"debconf debconf/frontend select Noninteractive"'"
+  - sudo debconf-set-selections <<< "'"mysql-server mysql-server/root_password password {{mysql_pass}}"'"
+  - sudo debconf-set-selections <<< "'"mysql-server mysql-server/root_password_again password {{mysql_pass}}"'"
+
+jobs:
+  - name: grocery-build
+    steps: 
+      - name: install JRE
+        run: sudo apt-get install default-jre -y
+      - name: install JDK
+        run: sudo apt-get -qqq install openjdk-11-jdk -y
+      - name: install Maven
+        run: sudo apt-get -qqq install maven -y ; export PATH=/opt/apache-maven-3.8.4/bin:$PATH 
+      - name: install nodejs
+        run: sudo apt-get -qqq install nodejs -y
+      - name: install npm
+        run: sudo apt-get -qqq install npm -y 
+      - name: install mysql
+        run: sudo apt-get -qqq install -y mysql-server 
+      - name: Delete old OnlineGroceryStore-Application
+        run: sudo rm -rf OnlineGroceryStore-Application
+      - name: clone OnlineGroceryStore-Application
+        run: git clone --recursive https://github.com/mgpavlov/OnlineGroceryStore-Application.git
+      - name: copy patch
+        run: sudo cp -rp {{shared_path}}/patch/grocery.patch ~/OnlineGroceryStore-Application/
+      - name: fix patch
+        run: cd ~/OnlineGroceryStore-Application && git apply grocery.patch
+      - name: set password in src application.properties
+        run: sed -i "'" /spring.datasource.password/ c\spring.datasource.password\:\ {{mysql_pass}}"'" OnlineGroceryStore-Application/src/main/resources/application.properties
+      - name: set password in target application.properties
+        run: sed -i "'" /spring.datasource.password/ c\spring.datasource.password\:\ {{mysql_pass}}"'" OnlineGroceryStore-Application/target/classes/application.properties
+      - name: test OnlineGroceryStore-Application
+        run: mvn -f OnlineGroceryStore-Application --batch-mode --update-snapshots clean test
+      - name: create war file
+        run: mvn -f OnlineGroceryStore-Application clean package
+      
+
+  - name: grocery-deploy
+    homePage: onlinemarket-1.0.0-SNAPSHOT
+    sourceFileLoc: OnlineGroceryStore-Application/target/onlinemarket-1.0.0-SNAPSHOT.war
+    deployFileLoc: /opt/tomcat/webapps/
+    server: tomcat
+    port: 8080
+    steps: 
+      - name: install JRE
+        run: sudo apt-get install default-jre -y
+      - name: install JDK
+        run: sudo apt-get -qqq install openjdk-11-jdk -y
+      - name: install Maven
+        run: sudo apt-get -qqq install maven -y ; export PATH=/opt/apache-maven-3.8.4/bin:$PATH 
+      - name: install nodejs
+        run: sudo apt-get -qqq install nodejs -y
+      - name: install npm
+        run: sudo apt-get -qqq install npm -y   
+      - name: install mysql
+        run: sudo apt-get -qqq install -y mysql-server
