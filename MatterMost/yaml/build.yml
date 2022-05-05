@@ -1,0 +1,44 @@
+setup:
+  - echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
+  - sudo apt update
+  - sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  # - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+  - apt-cache policy docker-ce
+  - sudo apt install docker-ce
+  - sudo apt install docker-compose -y
+  - git clone https://github.com/fall2021-csc510-group40/WolfJobs/
+jobs:
+  - name: wolfJobs-build
+    steps: 
+      - name: Change the directory
+        run: cd WolfJobs
+      - name: Run the Docker File
+        run: sudo docker-compose up --build
+  
+  - name: mutation-coverage
+    mutation:
+      url: https://github.com/chrisparnin/checkbox.io-micro-preview
+      iterations: 5
+      snapshots:
+       - http://localhost:3000/survey/long.md
+       - http://localhost:3000/survey/upload.md
+       - http://localhost:3000/survey/survey.md
+       - http://localhost:3000/survey/variations.md
+
+  - name: itrust-deploy
+    warFileLoc: iTrust2-v10/iTrust2/target/iTrust2-10.war
+    homePage: iTrust2-10/login
+    steps: 
+      - name: install JRE
+        run: sudo apt-get install default-jre -y
+      - name: install JDK
+        run: sudo apt-get -qqq install openjdk-11-jdk -y
+      - name: install Maven
+        run: sudo apt-get -qqq install maven -y ; export PATH=/opt/apache-maven-3.8.4/bin:$PATH 
+      - name: install nodejs
+        run: sudo apt-get -qqq install nodejs -y
+      - name: install npm
+        run: sudo apt-get -qqq install npm -y   
+      - name: install mysql
+        run: sudo apt-get -qqq install -y mysql-server
