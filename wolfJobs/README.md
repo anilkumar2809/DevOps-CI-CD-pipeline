@@ -26,6 +26,8 @@ New Feature -
 
 ## Screencast 
 
-[Click Here](https://youtu.be/SrHMuLjhWHM)
-<br>
 Link to Screencast for Windows (If above hyperlink is not working) - https://youtu.be/SrHMuLjhWHM
+
+<br>
+Note - I was able to finish the provisioning and runnning the application succesfully here, but not able to finish the prod up and deploy command. 
+
