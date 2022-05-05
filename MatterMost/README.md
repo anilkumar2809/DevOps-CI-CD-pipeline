@@ -29,4 +29,4 @@ Link to Screencast for Windows (If above hyperlink is not working) - https://dri
 
 
 
-Note - For this project I was able to complete only the provisioning part.
+Note - For this project I was able to complete only the provisioning VM part for building a pipeline.
