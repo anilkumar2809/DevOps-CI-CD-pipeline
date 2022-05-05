@@ -59,26 +59,33 @@ memory = 4096                       # RAM to be assigned for vm --Recommended to
 ## F0 Tasks
 ### pipeline jobs
 Hi I have considered  https://github.com/mgpavlov/OnlineGroceryStore-Application.gits
-Commands to execute for grocerystore
-pipeline init </br>
-pipeline build grocery-build grocery_build.yml </br>
+* Commands to execute for grocerystore
+* pipeline init </br>
+* pipeline build grocery-build grocery_build.yml </br>
 <!-- pipleline build grocery-test grocery_build.yml </br> -->
-pipeline prod up </br>
-pipeline deploy inventory grocery-deploy grocery_build. </br>
-pipleline monitoring </br>
+* pipeline prod up </br>
+* pipeline deploy inventory grocery-deploy grocery_build. </br>
+* pipleline monitoring </br>
 
-Project 2 is  https://github.com/rtzll/django-todolist.git </br>
-Commands to execute </br>
-for djnago to do application </br>
-pipeline init </br>
-pipeline build django-build django_build.yml </br>
+* Project 2 is  https://github.com/rtzll/django-todolist.git </br>
+* Commands to execute for djnago to do application </br>
+* pipeline init </br>
+* pipeline build django-build django_build.yml </br>
 <!-- pipleline build django-test django_build.yml </br> -->
-pipeline prod up </br>
-pipeline deploy inventory django-deploy django_build.yml </br>
-pipleline monitoring </br>
+* pipeline prod up </br>
+* pipeline deploy inventory django-deploy django_build.yml </br>
+* pipleline monitoring </br>
  ### pipeline new feature
- I have opted for monitoring part</br>
- For this task, I have created a new droplet nnamed dashboard to continously monitor the machines with the help of the 
+ * I have opted for monitoring part</br>
+* For this task, I have created a new droplet nnamed dashboard to continously monitor the machines with the help of the 
+
+##ISSUES FACED 
+Our application was more generic for the course project which lets us deploy the application smoothly
+The only hardship i faced is finding the application from GitHub to implement with the test cases and backend and front end
+Apart from that haven't faced any new issues, i faced some old issues like dpkg unlock erro
+For which we recursively called the function to release the locks.
+And also i fixed the issue from M3 for dos2unix conversion
+
 <a name = "m3_tag"></a>
 ## M3 Tasks
 <a name = "provision_tag"></a>
