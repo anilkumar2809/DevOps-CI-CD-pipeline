@@ -13,7 +13,7 @@ memory = 16384
 The Steps involved in building the pipeline - 
 
 1) Provision the VM - Once the VM configurations are present in the env file and ```pipeline init``` command is run, the vm is instantiated and will be ready to ssh into it. 
-2) Build the setup - Once the vm is ready to use, the setup in the build.yml is run to make it suitable for running the application - the steps include installing the requirements. in the build job, the repo is cloned, docker-compose is installed and using the command ```docker-compose up --build``` the build is built and will be succesful after all the requirements are installed and the databases are setup. Because of time constraint, I had to chose this project where build was done using docker. 
+2) Build the setup - Once the vm is ready to use, the setup in the build.yml is run to make it suitable for running the application - the steps include installing the requirements. Once the database is setup, the users had to be added to the system. Also in the config.json, we need to update the Drivername, siteURL to make the user access the database correctly. Then restart the service
 3) Prod up - Once the VM is setup after succesfully running the application ```pipeline prod up``` will be used to create an cloud instance. 
 4) Deploy - After the cloud instance was created, we will have a task in build.yml to deploy this application in the cloud instance created. 
 
