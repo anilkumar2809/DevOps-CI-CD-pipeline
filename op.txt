@@ -1,0 +1,1624 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mpl.rengreen:task-manager[0;1m >----------------------[m
+[[1;34mINFO[m] [1mBuilding task-manager 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.1.0:clean[m [1m(default-clean)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/vagrant/task-manager/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 32 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 24 source files to /home/vagrant/task-manager/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/vagrant/task-manager/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 9 source files to /home/vagrant/task-manager/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.2:test[m [1m(default-test)[m @ [36mtask-manager[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.[1mTaskManagerApplicationTests[m
+20:09:16.808 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:16.827 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:09:16.856 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:09:16.952 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:09:16.979 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests], using SpringBootContextLoader
+20:09:16.996 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]: class path resource [pl/rengreen/taskmanager/TaskManagerApplicationTests-context.xml] does not exist
+20:09:17.002 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]: class path resource [pl/rengreen/taskmanager/TaskManagerApplicationTestsContext.groovy] does not exist
+20:09:17.008 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:09:17.012 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]: TaskManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:09:17.175 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.388 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/vagrant/task-manager/target/classes/pl/rengreen/taskmanager/TaskManagerApplication.class]
+20:09:17.398 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pl.rengreen.taskmanager.TaskManagerApplication for test class pl.rengreen.taskmanager.TaskManagerApplicationTests
+20:09:17.639 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [pl.rengreen.taskmanager.TaskManagerApplicationTests]: using defaults.
+20:09:17.643 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+20:09:17.702 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58cbafc2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2034b64c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75d3a5e0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@74d1dc36, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7161d8d1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74e28667, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1cf6d1be, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@663c9e7a, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@19e4653c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@795509d9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53045c6c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5149d738, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bbe85a8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3a7442c7]
+20:09:17.727 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.729 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.737 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.739 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.741 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.747 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.753 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@353352b6 testClass = TaskManagerApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4681c175 testClass = TaskManagerApplicationTests, locations = '{}', classes = '{class pl.rengreen.taskmanager.TaskManagerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@460d0a57, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3aefe5e5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3ba9ad43, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@654f0d9c], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+20:09:17.768 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.768 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.rengreen.taskmanager.TaskManagerApplicationTests]
+20:09:17.861 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2022-05-03 20:09:19.205  INFO 24721 --- [           main] p.r.t.TaskManagerApplicationTests        : Starting TaskManagerApplicationTests on ubuntu-focal with PID 24721 (started by vagrant in /home/vagrant/task-manager)
+2022-05-03 20:09:19.225  INFO 24721 --- [           main] p.r.t.TaskManagerApplicationTests        : No active profile set, falling back to default profiles: default
+2022-05-03 20:09:22.462  INFO 24721 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-05-03 20:09:22.731  INFO 24721 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246ms. Found 3 repository interfaces.
+2022-05-03 20:09:24.491  INFO 24721 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5b06b61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-03 20:09:25.279  INFO 24721 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-03 20:09:25.772  INFO 24721 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-03 20:09:26.224  INFO 24721 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2022-05-03 20:09:26.368  INFO 24721 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2022-05-03 20:09:26.376  INFO 24721 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2022-05-03 20:09:26.732  INFO 24721 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2022-05-03 20:09:27.048  INFO 24721 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-05-03 20:09:29.234 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    drop table role if exists
+2022-05-03 20:09:29.242 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    drop table task if exists
+2022-05-03 20:09:29.247 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    drop table user if exists
+2022-05-03 20:09:29.251 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    drop table user_role if exists
+2022-05-03 20:09:29.259 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    create table role (
+       role_id integer generated by default as identity,
+        role varchar(255),
+        primary key (role_id)
+    )
+2022-05-03 20:09:29.286 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    create table task (
+       task_id bigint generated by default as identity,
+        creator_name varchar(255),
+        date date not null,
+        description varchar(1200),
+        is_completed boolean not null,
+        name varchar(255),
+        owner_id bigint,
+        primary key (task_id)
+    )
+2022-05-03 20:09:29.298 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    create table user (
+       user_id bigint generated by default as identity,
+        email varchar(255),
+        name varchar(255),
+        password varchar(255),
+        photo VARCHAR(255) DEFAULT 'images/user.png',
+        primary key (user_id)
+    )
+2022-05-03 20:09:29.314 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    create table user_role (
+       user_id bigint not null,
+        role_id integer not null
+    )
+2022-05-03 20:09:29.323 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    alter table user 
+       add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
+2022-05-03 20:09:29.335 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    alter table task 
+       add constraint FKjspifx5hvv1mc7ybu4qp2wyns 
+       foreign key (owner_id) 
+       references user
+2022-05-03 20:09:29.361 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    alter table user_role 
+       add constraint FKa68196081fvovjhkek5m97n3y 
+       foreign key (role_id) 
+       references role
+2022-05-03 20:09:29.374 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    
+    alter table user_role 
+       add constraint FK859n2jvi8ivhui0rl0esws6o 
+       foreign key (user_id) 
+       references user
+2022-05-03 20:09:29.427  INFO 24721 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@445b85d7'
+2022-05-03 20:09:29.430  INFO 24721 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 20:09:32.637  INFO 24721 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-03 20:09:32.792  WARN 24721 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 20:09:33.542  INFO 24721 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 20:09:34.713  INFO 24721 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4ca86a, org.springframework.security.web.context.SecurityContextPersistenceFilter@23cfdfa2, org.springframework.security.web.header.HeaderWriterFilter@222eda8a, org.springframework.security.web.csrf.CsrfFilter@7ea8224b, org.springframework.security.web.authentication.logout.LogoutFilter@13ae87a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5169db2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48f2d51d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40d04cf8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e741d6b, org.springframework.security.web.session.SessionManagementFilter@c414eb3, org.springframework.security.web.access.ExceptionTranslationFilter@347f8029, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fb0d9de]
+2022-05-03 20:09:35.223 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Role
+        */ insert 
+        into
+            role
+            (role_id, role) 
+        values
+            (null, ?)
+2022-05-03 20:09:35.238 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ADMIN]
+2022-05-03 20:09:35.294 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Role
+        */ insert 
+        into
+            role
+            (role_id, role) 
+        values
+            (null, ?)
+2022-05-03 20:09:35.299 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:35.349  INFO 24721 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2022-05-03 20:09:35.601 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_
+2022-05-03 20:09:35.641  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved role: ADMIN
+2022-05-03 20:09:35.647  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved role: USER
+2022-05-03 20:09:36.026 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.030 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:36.135 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:36.147 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [admin@mail.com]
+2022-05-03 20:09:36.149 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [admin]
+2022-05-03 20:09:36.150 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$soWLWucgSiF5B0.fGPhXaeKuiH8SC.59IzdAQb1PiOFCM.okRSYMa]
+2022-05-03 20:09:36.152 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/admin.png]
+2022-05-03 20:09:36.179 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.183 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-05-03 20:09:36.185 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:36.193 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.196 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ADMIN]
+2022-05-03 20:09:36.215 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* load pl.rengreen.taskmanager.model.User */ select
+        user0_.user_id as user_id1_2_1_,
+        user0_.email as email2_2_1_,
+        user0_.name as name3_2_1_,
+        user0_.password as password4_2_1_,
+        user0_.photo as photo5_2_1_,
+        roles1_.user_id as user_id1_3_3_,
+        role2_.role_id as role_id2_3_3_,
+        role2_.role_id as role_id1_0_0_,
+        role2_.role as role2_0_0_ 
+    from
+        user user0_ 
+    left outer join
+        user_role roles1_ 
+            on user0_.user_id=roles1_.user_id 
+    left outer join
+        role role2_ 
+            on roles1_.role_id=role2_.role_id 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:36.223 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-05-03 20:09:36.241 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* load pl.rengreen.taskmanager.model.Role */ select
+        role0_.role_id as role_id1_0_0_,
+        role0_.role as role2_0_0_ 
+    from
+        role role0_ 
+    where
+        role0_.role_id=?
+2022-05-03 20:09:36.248 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2022-05-03 20:09:36.262 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* delete collection pl.rengreen.taskmanager.model.User.roles */ delete 
+        from
+            user_role 
+        where
+            user_id=?
+2022-05-03 20:09:36.271 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-05-03 20:09:36.274 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.283 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-05-03 20:09:36.284 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1]
+2022-05-03 20:09:36.436 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.438 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:36.453 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:36.455 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:36.456 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Manager]
+2022-05-03 20:09:36.457 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$UKfMymH1x.qeSLFeOROcJ.lT9BdYN8G22m4R6f9IDn1yek7bG7dQa]
+2022-05-03 20:09:36.458 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/admin.png]
+2022-05-03 20:09:36.463 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.465 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-05-03 20:09:36.466 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:36.477 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.483 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ADMIN]
+2022-05-03 20:09:36.486 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* load pl.rengreen.taskmanager.model.User */ select
+        user0_.user_id as user_id1_2_1_,
+        user0_.email as email2_2_1_,
+        user0_.name as name3_2_1_,
+        user0_.password as password4_2_1_,
+        user0_.photo as photo5_2_1_,
+        roles1_.user_id as user_id1_3_3_,
+        role2_.role_id as role_id2_3_3_,
+        role2_.role_id as role_id1_0_0_,
+        role2_.role as role2_0_0_ 
+    from
+        user user0_ 
+    left outer join
+        user_role roles1_ 
+            on user0_.user_id=roles1_.user_id 
+    left outer join
+        role role2_ 
+            on roles1_.role_id=role2_.role_id 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:36.491 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-05-03 20:09:36.500 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* load pl.rengreen.taskmanager.model.Role */ select
+        role0_.role_id as role_id1_0_0_,
+        role0_.role as role2_0_0_ 
+    from
+        role role0_ 
+    where
+        role0_.role_id=?
+2022-05-03 20:09:36.503 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2022-05-03 20:09:36.507 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* delete collection pl.rengreen.taskmanager.model.User.roles */ delete 
+        from
+            user_role 
+        where
+            user_id=?
+2022-05-03 20:09:36.518 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-05-03 20:09:36.519 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.527 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-05-03 20:09:36.528 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [1]
+2022-05-03 20:09:36.662 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.664 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:36.671 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:36.673 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mark@mail.com]
+2022-05-03 20:09:36.675 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Mark]
+2022-05-03 20:09:36.675 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$wdbyDOdU//9BZk0QgUuiSehd1vCR5cVduVKqsbWczNsBNLpBepMEe]
+2022-05-03 20:09:36.677 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/mark.jpg]
+2022-05-03 20:09:36.682 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.683 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2022-05-03 20:09:36.684 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:36.787 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.789 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:36.793 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:36.799 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:36.800 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Ann]
+2022-05-03 20:09:36.802 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$afvrh7qyD7uwR7t6oJx9Zub/ECvKTjpZPiQythiz.UhTXVKJwKm0G]
+2022-05-03 20:09:36.803 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/ann.jpg]
+2022-05-03 20:09:36.808 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.811 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-05-03 20:09:36.812 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:36.917 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:36.919 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:36.924 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:36.927 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ralf@mail.com]
+2022-05-03 20:09:36.928 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Ralf]
+2022-05-03 20:09:36.930 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$VE2.Yn1Y6mD4PvBXMPCxHOEkFCPDvoLQMXaKsuNmsdgFhf6y6E0OG]
+2022-05-03 20:09:36.931 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/ralf.jpg]
+2022-05-03 20:09:36.936 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:36.937 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2022-05-03 20:09:36.938 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:37.044 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:37.049 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:37.057 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:37.060 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.061 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Kate]
+2022-05-03 20:09:37.062 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$wWfhTgDiRxiOYnlHT1282.oSVVX9VpIxrvsVYdNG2FsH/6dlHLt2m]
+2022-05-03 20:09:37.063 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/kate.jpg]
+2022-05-03 20:09:37.065 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:37.075 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2022-05-03 20:09:37.076 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:37.186 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Role as generatedAlias0 
+    where
+        generatedAlias0.role=:param0 */ select
+            role0_.role_id as role_id1_0_,
+            role0_.role as role2_0_ 
+        from
+            role role0_ 
+        where
+            role0_.role=?
+2022-05-03 20:09:37.192 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [USER]
+2022-05-03 20:09:37.200 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.User
+        */ insert 
+        into
+            user
+            (user_id, email, name, password, photo) 
+        values
+            (null, ?, ?, ?, ?)
+2022-05-03 20:09:37.202 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [tom@mail.com]
+2022-05-03 20:09:37.202 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Tom]
+2022-05-03 20:09:37.203 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [$2a$10$Dkgvta4IHneeuKcuUrsBx.BFgXb5mE3TNyPVTH2oRoN9MmqHuNG.W]
+2022-05-03 20:09:37.204 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [images/tom.jpg]
+2022-05-03 20:09:37.206 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert collection
+        row pl.rengreen.taskmanager.model.User.roles */ insert 
+        into
+            user_role
+            (user_id, role_id) 
+        values
+            (?, ?)
+2022-05-03 20:09:37.209 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [7]
+2022-05-03 20:09:37.210 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [INTEGER] - [2]
+2022-05-03 20:09:37.222 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_
+2022-05-03 20:09:37.239  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: admin
+2022-05-03 20:09:37.240  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Manager
+2022-05-03 20:09:37.241  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Mark
+2022-05-03 20:09:37.242  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Ann
+2022-05-03 20:09:37.242  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Ralf
+2022-05-03 20:09:37.243  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Kate
+2022-05-03 20:09:37.243  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved user: Tom
+2022-05-03 20:09:37.265 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.276 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mark@mail.com]
+2022-05-03 20:09:37.278 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.282 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mark@mail.com]
+2022-05-03 20:09:37.286 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.297 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Mark]
+2022-05-03 20:09:37.301 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-03-24]
+2022-05-03 20:09:37.307 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Setup first meeting with client. Collect basic data about the client. Define and collect briefing document from client.]
+2022-05-03 20:09:37.311 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [true]
+2022-05-03 20:09:37.315 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Collect briefing document ]
+2022-05-03 20:09:37.316 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [3]
+2022-05-03 20:09:37.332 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.334 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.338 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.343 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.352 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.353 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Ann]
+2022-05-03 20:09:37.355 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-04-03]
+2022-05-03 20:09:37.356 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Define and send project questionnaire to the client and wait for the client’s response. Iterate on doubts you have until everybody is in agreement. Finalize project questionnaire from client.]
+2022-05-03 20:09:37.368 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [true]
+2022-05-03 20:09:37.371 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Define project questionnaire ]
+2022-05-03 20:09:37.375 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4]
+2022-05-03 20:09:37.388 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.395 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ralf@mail.com]
+2022-05-03 20:09:37.402 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.402 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ralf@mail.com]
+2022-05-03 20:09:37.422 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.424 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Ralf]
+2022-05-03 20:09:37.424 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-04-13]
+2022-05-03 20:09:37.427 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Research client’s company to understand their brand, the way they communicate, their demographics, target audience. Research client’s industry to find ways of communicating specifically to the industry, strengths and weaknesses, trends and other industry specifics.]
+2022-05-03 20:09:37.440 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [true]
+2022-05-03 20:09:37.440 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Research client’s company and industry]
+2022-05-03 20:09:37.441 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [5]
+2022-05-03 20:09:37.465 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.469 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.475 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.478 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.480 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.491 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Kate]
+2022-05-03 20:09:37.491 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-04-23]
+2022-05-03 20:09:37.492 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Get quotation for development effort for project. Estimate design work with designers. Get quotation for copy/content or estimate work with your copywriters.  Get quotation for photography and video production or estimate effort involved.]
+2022-05-03 20:09:37.492 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [true]
+2022-05-03 20:09:37.495 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Get quotation for project]
+2022-05-03 20:09:37.495 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [6]
+2022-05-03 20:09:37.501 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.504 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.513 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.519 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.547 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.551 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.553 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-04-28]
+2022-05-03 20:09:37.555 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Get quotation for hosting and domain, particularly if specialized hosting is involved such as VPS hosting, cloud hosting, or special hosting or environment requirements.]
+2022-05-03 20:09:37.558 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.559 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Get quotation for hosting and domain]
+2022-05-03 20:09:37.563 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [6]
+2022-05-03 20:09:37.577 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.590 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.593 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.603 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mark@mail.com]
+2022-05-03 20:09:37.609 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.615 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.619 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-01]
+2022-05-03 20:09:37.626 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Quality assure each piece of content you have outsourced or bought – and ask for changes where necessary. Populate the website content with the various content items you have agreed with the client.]
+2022-05-03 20:09:37.629 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.629 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check the quality of each content element]
+2022-05-03 20:09:37.629 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [3]
+2022-05-03 20:09:37.640 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.643 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.645 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.655 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [mark@mail.com]
+2022-05-03 20:09:37.664 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.666 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.667 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-02]
+2022-05-03 20:09:37.669 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Define a Contact Us page with correct client details and a map. Populate links and icongraphy with links to relevant social media details. Create a link to your website in the footer (make sure it has been agreed with the client to do so).]
+2022-05-03 20:09:37.670 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.670 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Define a Contact Us page and social media details]
+2022-05-03 20:09:37.673 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [3]
+2022-05-03 20:09:37.686 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.687 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.696 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.697 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.708 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.711 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.713 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-03]
+2022-05-03 20:09:37.715 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Make sure web copywriting has been proofread and ran through a spelling and grammar checker to check for correctness. Use online tools such as Reverso, or Spellcheckplus.com. Check that generic content, such as lorem ipsum, has been properly removed and replaced.]
+2022-05-03 20:09:37.715 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.715 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check all web copywriting]
+2022-05-03 20:09:37.717 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4]
+2022-05-03 20:09:37.734 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.739 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.745 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.755 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.760 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.767 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.769 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-04]
+2022-05-03 20:09:37.770 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [See that all images are in the correct places, smushed, formatted, width and height specified and working on all devices. Confirm that videos and audio files are in the correct places, formatted and working on all devices.]
+2022-05-03 20:09:37.770 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.770 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check all images and videos]
+2022-05-03 20:09:37.771 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4]
+2022-05-03 20:09:37.777 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.787 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:37.790 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.803 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.808 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.810 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:37.811 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-05]
+2022-05-03 20:09:37.811 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Test all linked content, such as case studies, ebooks, and whitepapers, and verify that they are correctly linked. Test to see that all internal links across web pages are working properly. Ensure that company logo is linked to the homepage.]
+2022-05-03 20:09:37.815 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.815 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check all linked content]
+2022-05-03 20:09:37.819 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [6]
+2022-05-03 20:09:37.871 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.873 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.884 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.893 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [kate@mail.com]
+2022-05-03 20:09:37.897 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.907 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Kate]
+2022-05-03 20:09:37.908 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-06]
+2022-05-03 20:09:37.909 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Ensure that Contact Us and other forms are submitting data properly. If the form is sent to an email address ensure that email is received on a mailbox that is monitored, or ensure that content is correctly stored in your database. Verify the Thank-you message or page displayed after form is submitted. Check that Auto-responders are working properly and text in emails has been proofed.]
+2022-05-03 20:09:37.911 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.915 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check Contact Us and other Forms]
+2022-05-03 20:09:37.915 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [6]
+2022-05-03 20:09:37.919 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.927 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.929 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.935 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ann@mail.com]
+2022-05-03 20:09:37.948 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.948 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Ann]
+2022-05-03 20:09:37.948 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-07]
+2022-05-03 20:09:37.949 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [External links across web pages are working properly, and open in a new tab (Fix any broken links using this tool). Ensure that Social media share icons are working properly – that there is a good image for sharing and that the description for sharing is appropriate. Correct your metadata as necessary to ensure social media sharing is working ok.]
+2022-05-03 20:09:37.949 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.949 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check all external links]
+2022-05-03 20:09:37.949 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [4]
+2022-05-03 20:09:37.960 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.961 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ralf@mail.com]
+2022-05-03 20:09:37.972 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:37.975 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [ralf@mail.com]
+2022-05-03 20:09:37.986 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:37.987 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Ralf]
+2022-05-03 20:09:37.990 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-08]
+2022-05-03 20:09:37.991 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Try a non-existing address on your page to check the 404 page and 404 redirect pages are in place. Choose www vs no-www and make sure that ONLY one of them is working to ensure you don’t get penalized for duplicate content. After choosing one, make sure one redirects to the other.]
+2022-05-03 20:09:37.995 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:37.999 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check the 404 page and redirects]
+2022-05-03 20:09:37.999 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [5]
+2022-05-03 20:09:38.002 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.019 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.022 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.031 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.034 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.039 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.039 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-09]
+2022-05-03 20:09:38.043 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Make sure that viewport meta tag is used. Check that  website is mobile-friendly with at least a MobileOk score of 75. Check if Google sees your page as Mobile-Friendly. Make sure that correct input types for email, phone and URL input form fields are used to ensure these are rendered correctly on mobile phones.]
+2022-05-03 20:09:38.043 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.043 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check if website is mobile-friendly]
+2022-05-03 20:09:38.047 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [2]
+2022-05-03 20:09:38.049 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.053 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.057 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.067 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.069 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-11]
+2022-05-03 20:09:38.069 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Check how the site looks on emulators such as ipadpeek, screenfly, mobilephonesimulator. Test the site using real devices you have accessible to you or use opendevicelab.com.]
+2022-05-03 20:09:38.070 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.071 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Test website on emulators and real devices]
+2022-05-03 20:09:38.071 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.079 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.081 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.093 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.099 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.099 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-13]
+2022-05-03 20:09:38.099 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Check that all pages have unique page titles (with a recommended length of fewer than 70 characters, including any keywords). Check that all pages have unique meta descriptions (with a recommended length of fewer than 156 characters, including keywords). Verify that pages have your chosen keywords included without any keyword stuffing (do not over-emphasize particular keywords).]
+2022-05-03 20:09:38.101 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.101 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check page titles, meta descriptions and keywords]
+2022-05-03 20:09:38.101 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.105 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.116 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.124 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.125 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.125 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-15]
+2022-05-03 20:09:38.127 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [See that all page URLs consistently reflect site information architecture. If you have had another older website, make sure you have 301 redirects in place for all old URLs (redirecting old pages to new ones).]
+2022-05-03 20:09:38.127 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.127 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Check page URLs]
+2022-05-03 20:09:38.131 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.138 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.139 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.157 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.159 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.160 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-17]
+2022-05-03 20:09:38.160 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Minify javascript and CSS files. Optimize the size of images and replace the existing images with the optimized images. Specify image dimensions for each image. Enable gzip compression on your hosting server.]
+2022-05-03 20:09:38.161 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.161 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Minify and optimize files]
+2022-05-03 20:09:38.161 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.172 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.176 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.178 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.183 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.187 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-19]
+2022-05-03 20:09:38.191 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Create cover images for Social Media such as Facebook, Twitter, LinkedIn company page, Pinterest, Instagram or others as necessary. Register all social media properties and get them set up with profile images, cover pages, links back to the website.]
+2022-05-03 20:09:38.191 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.191 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Register social media properties]
+2022-05-03 20:09:38.191 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.196 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        User as generatedAlias0 
+    where
+        generatedAlias0.email=:param0 */ select
+            user0_.user_id as user_id1_2_,
+            user0_.email as email2_2_,
+            user0_.name as name3_2_,
+            user0_.password as password4_2_,
+            user0_.photo as photo5_2_ 
+        from
+            user user0_ 
+        where
+            user0_.email=?
+2022-05-03 20:09:38.196 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager@mail.com]
+2022-05-03 20:09:38.207 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* insert pl.rengreen.taskmanager.model.Task
+        */ insert 
+        into
+            task
+            (task_id, creator_name, date, description, is_completed, name, owner_id) 
+        values
+            (null, ?, ?, ?, ?, ?, ?)
+2022-05-03 20:09:38.207 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Manager]
+2022-05-03 20:09:38.211 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DATE] - [2022-05-21]
+2022-05-03 20:09:38.213 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [Send the finished site to the client and get feedback. Fix and change any requests by client. Give access to client to all accounts created on their behalf. Send updates to client and wait for client sign-off.]
+2022-05-03 20:09:38.215 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BOOLEAN] - [false]
+2022-05-03 20:09:38.215 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [Send the finished site to the client]
+2022-05-03 20:09:38.215 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [BIGINT] - [null]
+2022-05-03 20:09:38.236 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    /* select
+        generatedAlias0 
+    from
+        Task as generatedAlias0 */ select
+            task0_.task_id as task_id1_1_,
+            task0_.creator_name as creator_2_1_,
+            task0_.date as date3_1_,
+            task0_.description as descript4_1_,
+            task0_.is_completed as is_compl5_1_,
+            task0_.name as name6_1_,
+            task0_.owner_id as owner_id7_1_ 
+        from
+            task task0_
+2022-05-03 20:09:38.265 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    select
+        user0_.user_id as user_id1_2_0_,
+        user0_.email as email2_2_0_,
+        user0_.name as name3_2_0_,
+        user0_.password as password4_2_0_,
+        user0_.photo as photo5_2_0_ 
+    from
+        user user0_ 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:38.280 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2022-05-03 20:09:38.292 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    select
+        user0_.user_id as user_id1_2_0_,
+        user0_.email as email2_2_0_,
+        user0_.name as name3_2_0_,
+        user0_.password as password4_2_0_,
+        user0_.photo as photo5_2_0_ 
+    from
+        user user0_ 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:38.297 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-05-03 20:09:38.303 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    select
+        user0_.user_id as user_id1_2_0_,
+        user0_.email as email2_2_0_,
+        user0_.name as name3_2_0_,
+        user0_.password as password4_2_0_,
+        user0_.photo as photo5_2_0_ 
+    from
+        user user0_ 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:38.307 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2022-05-03 20:09:38.310 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    select
+        user0_.user_id as user_id1_2_0_,
+        user0_.email as email2_2_0_,
+        user0_.name as name3_2_0_,
+        user0_.password as password4_2_0_,
+        user0_.photo as photo5_2_0_ 
+    from
+        user user0_ 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:38.312 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [6]
+2022-05-03 20:09:38.319 DEBUG 24721 --- [           main] org.hibernate.SQL                        : 
+    select
+        user0_.user_id as user_id1_2_0_,
+        user0_.email as email2_2_0_,
+        user0_.name as name3_2_0_,
+        user0_.password as password4_2_0_,
+        user0_.photo as photo5_2_0_ 
+    from
+        user user0_ 
+    where
+        user0_.user_id=?
+2022-05-03 20:09:38.324 TRACE 24721 --- [           main] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-05-03 20:09:38.339  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Collect briefing document ' for owner: Mark
+2022-05-03 20:09:38.346  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Define project questionnaire ' for owner: Ann
+2022-05-03 20:09:38.350  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Research client’s company and industry' for owner: Ralf
+2022-05-03 20:09:38.351  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Get quotation for project' for owner: Kate
+2022-05-03 20:09:38.352  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Get quotation for hosting and domain' for owner: Kate
+2022-05-03 20:09:38.353  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check the quality of each content element' for owner: Mark
+2022-05-03 20:09:38.354  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Define a Contact Us page and social media details' for owner: Mark
+2022-05-03 20:09:38.355  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check all web copywriting' for owner: Ann
+2022-05-03 20:09:38.355  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check all images and videos' for owner: Ann
+2022-05-03 20:09:38.355  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check all linked content' for owner: Kate
+2022-05-03 20:09:38.355  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check Contact Us and other Forms' for owner: Kate
+2022-05-03 20:09:38.355  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check all external links' for owner: Ann
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check the 404 page and redirects' for owner: Ralf
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check if website is mobile-friendly' for owner: Manager
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Test website on emulators and real devices' for owner: no owner
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check page titles, meta descriptions and keywords' for owner: no owner
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Check page URLs' for owner: no owner
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Minify and optimize files' for owner: no owner
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Register social media properties' for owner: no owner
+2022-05-03 20:09:38.356  INFO 24721 --- [           main] p.r.t.dataloader.InitialDataLoader       : saved task: 'Send the finished site to the client' for owner: no owner
+2022-05-03 20:09:38.365  INFO 24721 --- [           main] p.r.t.TaskManagerApplicationTests        : Started TaskManagerApplicationTests in 20.472 seconds (JVM running for 23.303)
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.402 s - in pl.rengreen.taskmanager.[1mTaskManagerApplicationTests[m
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.controller.[1mRegisterControllerTest[m
+2022-05-03 20:09:39.004  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.005  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.006  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.376 s[1;31m <<< FAILURE![m - in pl.rengreen.taskmanager.controller.[1mRegisterControllerTest[m
+[[1;31mERROR[m] showRegisterForm_shouldReturnStatusOkAndRegisterFormAsViewNameAndUserAsAttribute(pl.rengreen.taskmanager.controller.RegisterControllerTest)  Time elapsed: 0.362 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<views/registerForm> but was:<forms/register>
+	at pl.rengreen.taskmanager.controller.RegisterControllerTest.showRegisterForm_shouldReturnStatusOkAndRegisterFormAsViewNameAndUserAsAttribute(RegisterControllerTest.java:40)
+
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.controller.[1mIndexControllerTest[m
+2022-05-03 20:09:39.211  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.212  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.213  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in pl.rengreen.taskmanager.controller.[1mIndexControllerTest[m
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.controller.[1mStaticPageControllerTest[m
+2022-05-03 20:09:39.299  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.303  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.304  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in pl.rengreen.taskmanager.controller.[1mStaticPageControllerTest[m
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.controller.[1mLoginControllerTest[m
+2022-05-03 20:09:39.368  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.375  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.376  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.061 s[1;31m <<< FAILURE![m - in pl.rengreen.taskmanager.controller.[1mLoginControllerTest[m
+[[1;31mERROR[m] showLoginForm_shouldReturnStatusOkAndLoginFormAsViewName(pl.rengreen.taskmanager.controller.LoginControllerTest)  Time elapsed: 0.06 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<views/loginForm> but was:<forms/login>
+	at pl.rengreen.taskmanager.controller.LoginControllerTest.showLoginForm_shouldReturnStatusOkAndLoginFormAsViewName(LoginControllerTest.java:24)
+
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.controller.[1mTaskControllerTest[m
+2022-05-03 20:09:39.549  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.549  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.550  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2022-05-03 20:09:39.641  INFO 24721 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2022-05-03 20:09:39.641  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2022-05-03 20:09:39.642  INFO 24721 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m2[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.267 s[1;31m <<< FAILURE![m - in pl.rengreen.taskmanager.controller.[1mTaskControllerTest[m
+[[1;31mERROR[m] updateTask_shouldReturnStatusOkAndFilledTaskFormAsViewNameAndTaskAsAttribute(pl.rengreen.taskmanager.controller.TaskControllerTest)  Time elapsed: 0.053 s  <<< FAILURE!
+java.lang.AssertionError: View name expected:<views/filledTaskForm> but was:<forms/task-edit>
+	at pl.rengreen.taskmanager.controller.TaskControllerTest.updateTask_shouldReturnStatusOkAndFilledTaskFormAsViewNameAndTaskAsAttribute(TaskControllerTest.java:41)
+
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.service.[1mUserServiceImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 s - in pl.rengreen.taskmanager.service.[1mUserServiceImplTest[m
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.service.[1mTaskServiceImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in pl.rengreen.taskmanager.service.[1mTaskServiceImplTest[m
+[[1;34mINFO[m] Running pl.rengreen.taskmanager.service.[1mRoleServiceImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in pl.rengreen.taskmanager.service.[1mRoleServiceImplTest[m
+2022-05-03 20:09:40.349  INFO 24721 --- [       Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-03 20:09:40.356  INFO 24721 --- [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 20:09:40.363  INFO 24721 --- [       Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-03 20:09:40.365 DEBUG 24721 --- [       Thread-1] org.hibernate.SQL                        : 
+    
+    drop table role if exists
+2022-05-03 20:09:40.375 DEBUG 24721 --- [       Thread-1] org.hibernate.SQL                        : 
+    
+    drop table task if exists
+2022-05-03 20:09:40.382 DEBUG 24721 --- [       Thread-1] org.hibernate.SQL                        : 
+    
+    drop table user if exists
+2022-05-03 20:09:40.386 DEBUG 24721 --- [       Thread-1] org.hibernate.SQL                        : 
+    
+    drop table user_role if exists
+2022-05-03 20:09:40.394  INFO 24721 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-03 20:09:40.420  INFO 24721 --- [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  LoginControllerTest.showLoginForm_shouldReturnStatusOkAndLoginFormAsViewName:24 View name expected:<views/loginForm> but was:<forms/login>[m
+[[1;31mERROR[m] [1;31m  RegisterControllerTest.showRegisterForm_shouldReturnStatusOkAndRegisterFormAsViewNameAndUserAsAttribute:40 View name expected:<views/registerForm> but was:<forms/register>[m
+[[1;31mERROR[m] [1;31m  TaskControllerTest.updateTask_shouldReturnStatusOkAndFilledTaskFormAsViewNameAndTaskAsAttribute:41 View name expected:<views/filledTaskForm> but was:<forms/task-edit>[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 10, Failures: 3, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  37.926 s
+[[1;34mINFO[m] Finished at: 2022-05-03T20:09:40Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.2:test[m [1m(default-test)[m on project [36mtask-manager[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/vagrant/task-manager/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -34,6 +34,9 @@ jobs:
         run: sed -i "'" /spring.datasource.password/ c\spring.datasource.password\:\ {{mysql_pass}}"'" OnlineGroceryStore-Application/src/main/resources/application.properties
       - name: set password in target application.properties
         run: sed -i "'" /spring.datasource.password/ c\spring.datasource.password\:\ {{mysql_pass}}"'" OnlineGroceryStore-Application/target/classes/application.properties
+  
+  - name: grocery-test 
+    steps: 
       - name: test OnlineGroceryStore-Application
         run: mvn -f OnlineGroceryStore-Application --batch-mode --update-snapshots clean test
       - name: create war file

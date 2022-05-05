@@ -1,0 +1,58 @@
+setup:
+  - sudo apt-get -qqq -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update
+  - sudo apt-get -qqq update -y
+  - sudo apt-get -qqq install -y git wget dos2unix
+  - sudo DEBIAN_FRONTEND=noninteractive apt-get -qqq install -y debconf-utils
+ 
+
+jobs:
+  - name: django-build
+    steps:
+      - name: Delete old todolist
+        run: sudo rm -rf django-todolist
+      - name: clone repo
+        run: git clone https://github.com/rtzll/django-todolist.git
+     -  name: copy patch
+        run: sudo cp -rp {{shared_path}}/patch/todo.patch ~/django-todolist
+      - name: fix patch
+        run: cd ~/django-todolist && git apply todo.patch
+      - name: apt update
+        run: sudo apt update -y
+      - name: apt upgrade
+        run: sudo apt upgrade -y
+      - name: install pip
+        run: sudo apt install python3-pip
+      - name: install venv
+        run: sudo apt -y install python3-venv
+      - name: install myenv
+        run: cd django-todolist && sudo python3 -m venv my_env
+      - name: activate env
+        run: cd django-todolist && sudo source my_env/bin/activate  
+      - name: python is python3
+        run: sudo apt install python-is-python3
+      - name: install shell file
+        run:  cd cd django-todolist && sudo bash dj.sh
+      
+
+  - name: django-deploy
+    homePage: todolist
+    server: django
+    port: 8080
+    steps:
+      - name: apt update
+        run: sudo apt update -y
+      - name: apt upgrade
+        run: sudo apt upgrade -y
+      - name: install pip
+        run: sudo apt install python3-pip
+      - name: install venv
+        run: sudo apt -y install python3-venv
+      - name: install myenv
+        run: cd django-todolist && sudo python3 -m venv my_env
+      - name: activate env
+        run: cd django-todolist && sudo source my_env/bin/activate  
+      - name: python is python3
+        run: sudo apt install python-is-python3
+      - name: install shell file
+        run:  cd cd django-todolist && sudo bash dj.sh
+      
