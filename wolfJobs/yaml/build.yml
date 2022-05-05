@@ -1,0 +1,20 @@
+setup:
+  - echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
+  - sudo apt update
+  - sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  # - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+  # - apt-cache policy docker-ce
+  # - sudo apt install docker-ce
+  - sudo apt install docker-compose -y
+  - git clone https://github.com/fall2021-csc510-group40/WolfJobs/
+jobs:
+  - name: wolfJobs-build
+    steps: 
+      - name: Change the directory
+        run: cd WolfJobs
+      - name: Run the Docker File
+        run: sudo docker-compose up --build
+  - name: wolfJobs-deploy
+    steps:
+      - name: Deploy the wolfJobs application in cloud
