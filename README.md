@@ -1,19 +1,9 @@
 # Pipeline-Template
-| Readme Loc | Git Link |
-| ----- | ----- |
-| [env file](#env_file) |[Click Here](#env_file) |
-| [M1 fixes](#m1_tag) | [Click Here](/lib/build.yml) |
-| [M2 Tasks ](#m2_tag) | [Click Here](/lib/build.yml) |
-| [Mutate Operators](#mutate_tag) | [Click Here](/mutation/rewrite.js) |
-| [Test harness](#harness_tag) | [Click Here](/mutation/mutate.sh) |
-| [Snapshot oracle and differencing](#diff_tag) | [Click Here](/mutation/mutate.sh) |
-| [mutation-coverage](#mutatecoverage_tag) | [Click Here](/mutation/mutationcoverage.txt) |
-| [ Milestone report ](#milestone_tag) | [Click Here](#milestone_tag) |
-| [M3 Tasks ](#m3_tag) | [Click Here](/lib/build.yml) |
-| [Provisioning on cloud service](#provision_tag) | [Click Here](/mutation/rewrite.js) |
-| [iTrust deployment job](#deployment_tag) | [Click Here](/mutation/rewrite.js) |
-| [Deployment strategy](#strategy_tag) | [Click Here](/mutation/rewrite.js) |
-| [Screencast ](#screencast_tag) | [Click Here](#screencast_tag)
+
+For the final exam submission, I was able to come up with two projects. One was the suggestion by TA - Samim and other is from the Software Engineering course projects (Fall 2020). 
+
+1) Mattermost 
+2) WolfJobs - https://github.com/fall2021-csc510-group40/WolfJobs/
 
 
 
