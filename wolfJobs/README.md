@@ -20,13 +20,13 @@ The Steps involved in building the pipeline -
 
 New Feature - 
 
-
+The new feature I thought of implementing is to do deploy back to the stable version we define if there is any error in the continous deployment we do. This way we can actually know if the new updates in the software can be rolled back to the stable versions very easily if there are any bugs. 
 
 
 
 ## Screencast 
 
-Link to Screencast for Windows (If above hyperlink is not working) - https://youtu.be/SrHMuLjhWHM
+Link to Screencast for Windows (If above hyperlink is not working) - 
 
 <br>
 Note - I was able to finish the provisioning and runnning the application succesfully here, but not able to finish the prod up and deploy command. 
