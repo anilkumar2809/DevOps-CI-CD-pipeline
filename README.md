@@ -2,6 +2,7 @@
 | Readme Loc | Git Link |
 | ----- | ----- |
 | [env file](#env_file) |[Click Here](#env_file) |
+| [F0(#f_file) |[Click Here](#f_tag) |
 | [M3 Tasks ](#m3_tag) | [Click Here](yaml/build.yml) |
 | [Provisioning on cloud service](#provision_tag) | [Click Here](/lib/droplet.js) |
 | [iTrust deployment job](#deployment_tag) | [Click Here](/lib/deployer.js) |
@@ -53,6 +54,28 @@ ip_address = 192.168.52.100         # Any ip can be assigned
 memory = 4096                       # RAM to be assigned for vm --Recommended to use atleast 4GB
 # Please make sure no comment lines are in .env file
 ```
+
+<a name = "f_tag"></a>
+## F0 Tasks
+Hi I have considered  https://github.com/mgpavlov/OnlineGroceryStore-Application.gits
+Commands to execute for grocerystore
+pipeline init </br>
+pipeline build grocery-build grocery_build.yml </br>
+pipleline build grocery-test grocery_build.yml </br>
+pipeline prod up </br>
+pipeline deploy inventory grocery-deploy grocery_build. </br>
+pipleline monitoring </br>
+
+Project 2 is  https://github.com/rtzll/django-todolist.git </br>
+Commands to execute </br>
+for djnago to do application </br>
+pipeline init </br>
+pipeline build django-build django_build.yml </br>
+pipleline build django-test django_build.yml </br>
+pipeline prod up </br>
+pipeline deploy inventory django-deploy django_build.yml </br>
+pipleline monitoring </br>
+
 <a name = "m3_tag"></a>
 ## M3 Tasks
 <a name = "provision_tag"></a>
